@@ -6,6 +6,10 @@ import { ChallengeBox } from '../src/components/ChallengeBox';
 
 import styles from '../src/styles/pages/Home.module.css';
 import Head from 'next/head';
+import {
+  CountdownContext,
+  CountdownProvider,
+} from '../src/contexts/CountdownContext';
 
 export default function Home() {
   return (
@@ -14,16 +18,18 @@ export default function Home() {
         <title>Inicio | Move.it</title>
       </Head>
       <ExperienceBar />
-      <section>
-        <div>
-          <Profile />
-          <CompletedChallenges />
-          <Cowntdown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+      <CountdownProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChallenges />
+            <Cowntdown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountdownProvider>
     </div>
   );
 }
