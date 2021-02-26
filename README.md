@@ -10,7 +10,7 @@ During this week of code with the Rocketseat team and every participant who took
 
 During the week I could improve all my skills and learn a lot about some functionalities as CONTEXT in React.
 
-## Why is it for? 
+## What is it for? 
 
 Move.it is a application that uses the pomodoro technic and improves it by givin it a little bit of challenge and a gamebility to it.
 
